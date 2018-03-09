@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.mololos.malolosemergencyapplication.EmergencyTypeMenu">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="What kind of emergency assistance do you need?"
+        android:gravity="center|left"
+        android:padding="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButtonFire"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/fire_truck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fire"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonMedical"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="fitCenter"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ambulance_rescue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:gravity="center"/>
+
+            <ImageButton
+            android:id="@+id/imageButtonCrime"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/policecar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crime"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonEmergencyRescue"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="fitCenter"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/rescueboat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency Rescue"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

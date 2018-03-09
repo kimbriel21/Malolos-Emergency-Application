@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mololos.malolosemergencyapplication.EmergencyTypeCategory">
+
+    <TextView
+        android:id="@+id/textViewEmergencyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH AND RESCUE EMERGENCY"
+        android:textSize="25dp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT EMERGENCY TYPE"
+        android:paddingLeft="8dp"
+        android:textSize="18dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/medicalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/buttonHeartAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Heart Attack"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonStroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Stroke"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonPoisoning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Poisoning"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonAnimalBites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Animal Bites"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonFracture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Fracture from Falling"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonOBCases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="OB Cases (Child Birth)"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonVehicularAccident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Vehicular Accident"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonOtherMedical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Other Medical Emergencies"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rescueLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/buttonDrowning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Drowning"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonSuicideAttempt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Suicide Attempt"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonFloodVictims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Flood Victims"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonEarthquakeVictims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Earthquake Victims"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonTyphoonVictims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Typhoon Victims"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonOtherRescue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Other Search and Rescue Emergencies"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fireLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/buttonResidentialFire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Residential Fire"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonCommercialFire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Commercial Fire"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonWildFire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Wild Fire"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonSceneAccident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Scene of an Accident"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonOtherFire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Other Fire Emegencies"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/crimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/buttonKidnapHostage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Kidnap, Hostage"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonRobberyHoldup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Robbery, Holdup"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonMurderHomicide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Murder, Homicide"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonRapeMolest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Scene of an Accident"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonSceneAccidentCrime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Scene of Accident"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/buttonOtherCrime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Other Crime Emergencies"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>
